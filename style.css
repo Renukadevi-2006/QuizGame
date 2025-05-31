@@ -1,0 +1,132 @@
+/* Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #dbeafe, #fef9ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+/* Quiz Container */
+.quiz-container {
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 100%;
+  max-width: 600px;
+  transition: 0.3s;
+}
+
+/* Heading */
+.quiz-container h1 {
+  font-size: 2rem;
+  color: #1d4ed8;
+  margin-bottom: 25px;
+  text-align: center;
+  border-bottom: 2px solid #e0e7ff;
+  padding-bottom: 10px;
+}
+
+/* Question Box */
+#question {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+  color: #111827;
+}
+
+/* Answer Buttons */
+#answers {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.answer-btn {
+  background-color: #f1f5f9;
+  border: 2px solid transparent;
+  padding: 12px 20px;
+  border-radius: 12px;
+  font-size: 1rem;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.answer-btn:hover {
+  background-color: #e0f2fe;
+  border-color: #38bdf8;
+}
+
+/* Next Button */
+#next-btn {
+  margin-top: 25px;
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#next-btn:hover {
+  background-color: #1e40af;
+}
+
+/* Result Box */
+#result-box {
+  text-align: center;
+}
+
+#result-box h2 {
+  font-size: 1.5rem;
+  color: #16a34a;
+  margin-bottom: 10px;
+}
+
+#score {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #374151;
+}
+
+/* Restart Button */
+#result-box button {
+  background-color: #10b981;
+  color: white;
+  padding: 10px 18px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#result-box button:hover {
+  background-color: #059669;
+}
+
+/* Hidden class */
+.hidden {
+  display: none;
+}
+
+/* Correct / Wrong Styles */
+.answer-btn.correct {
+  background-color: #bbf7d0;
+  border-color: #22c55e;
+}
+
+.answer-btn.wrong {
+  background-color: #fecaca;
+  border-color: #ef4444;
+}
